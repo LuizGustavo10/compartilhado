@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+body{
+    background-image: url(../imagens/fundo-site.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    font-family: 'VT323', monospace;
+    color: white;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 30px;
+
+}
+
+.cartao{
+    background-color: #070d12;
+    width: 370px;
+    border: 2px solid #e126d9;
+    border-radius: 10px;
+    overflow: hidden;
+
+}
+
+.cartao .minhas-informacoes{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /*alinha horizontalmente por causa do flex direction column*/
+    gap: 10px;
+
+}
+
+/* Mexer na imagem de perfil */
+.cartao .minhas-informacoes img {
+    width: 120px;
+    height: 120px;
+    border-radius: 20px;
+    border: 4px solid #02d08f;
+    
+}
+
+.cartao .minhas-informacoes .nome{
+    font-size: 26px;
+}
+
+.cartao .minhas-informacoes .cargo{
+    font-size: 20px;
+    color: #b8bbc5;
+
+}
+.cartao .conteudo{
+    margin-top: 15px;
+}
+/*fisplay-flex vem como padrao flex-direction: row*/
+.cartao .abas{
+    display: flex;
+}
+
+.cartao .abas .aba{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    cursor: pointer;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.cartao .abas img{
+    width: 30px;
+}
+
+.cartao .abas .aba.selecionado{
+    background-color: #262626;
+
+}
+.cartao .informacoes-abas{
+    background-color: #262626;
+}
+
+.cartao .abas .aba:hover{
+    background-color: #414141;
+}
+
+.informacoes-abas .informacao{
+    min-height: 260px;
+    padding: 15px;
+    display: none;
+}
+
+.informacoes-abas .informacao.selecionado{
+    display: block;
+}
+
+.informacoes-abas .sub-titulo{
+    font-size: 22px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.informacoes-abas .descricao{
+    font-size: 20px;
+    max-height: 180px;
+    padding-right: 15px;
+    overflow-y: auto;
+}
+
+.informacoes-abas .descricao span{
+    color: #02d08f;
+    
+}
+
+.redes-sociais{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+    max-height: 180px;
+    overflow-y: auto;
+
+}
+
+/*Por padrao a tag a vem como inline*/
+.redes-sociais a{
+    width: 250px;
+    display: block;
+    color: #f3f3f3;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    transition:opacity 0.3s ease-in-out;
+}
+.redes-sociais li a:hover{
+    opacity: 0.7;
+} 
+
+.redes-sociais .curriculo{
+    background-color: #06c185;
+}
+
+.redes-sociais .linkedin{
+    background-color: #1d87bd;
+}
+
+.redes-sociais .github{
+    background-color: #545454;
+}
+</style>
+</head>
+<body>
+    <main class="cartao">
+        <div class="minhas-informacoes">
+            <img src="./taua-img/taua-perfil.jpg" alt="foto do perfil">
+            <h1 class="nome">Tauã Felipe Rocha Amaro</h1>
+            <h2 class="cargo">Estudante</h2>
+        </div>
+            <div class="informacoes-abas">
+                <div class="informacao selecionado" id="informacao-sobre-mim">
+                    <h3 class="sub-titulo">Sobre</h3>
+                    <div class="descricao">
+                        <p> Olá! 
+                            Meu nome é Tauã, seja bem vindo (a).
+                            
+                        </p>
+
+                        <p>Sou uma pessoa que se indentifica muito com a área de programação. Sempre tive como meta trabalhar com programação, porém de início trabalhei em outra área.
+                        E atualmente comecei a fazer transição de carreira e por minha meta em prática! Começando os estudos com <span>HTML, CSS e JavaScript.</span>
+                        Gosto muito de aprender coisas novas (até demais), e meus principais hobbies são Desenhar, jogar VideoGame, jogar Volei.</p>
+                    </div>   
+                </div>
+                
+                <div class="informacao" id="informacao-minhas-redes">
+                    <h3 class="sub-titulo">Minhas redes</h3>
+
+                    <ul class="redes-sociais">
+                        <li> <a href="https://www.linkedin.com/in/tau%C3%A3-felipe-75431b254?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="linkedin" target="_blank">Linkedin</a></li>
+                        <li> <a href="https://github.com/felipetaua" target="_blank" class="github">Github</a></li>
+                        <li> <a href="#" class="curriculo">Curriculo</a> </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
