@@ -1,20 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./nico.css">
-  <title>Teste de git</title>
+  <title>Nico</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="img/logoico.ico">
 </head>
+
 <body>
-  <div class="card">
-    <h1>testando compartilhamento <br> do github</h1>
-    <a href="index.html">Pagina do professor</a>
+  <header>
+    <div class="navbar">
+      <div class="logo"><a href="#"><img src="img/icon.png" alt="Nico" class="img_logo"></a></div>
+
+      <ul class="links">
+        <li> <a href="hero">Home</a></li>
+        <li> <a href="about">Sobre</a></li>
+        <li> <a href="services">Serviços</a></li>
+        <li> <a href="contato.html">Contato</a></li>
+      </ul>
+
+      <a href="https://github.com/NicolyC?tab=repositories" class="action_btn">Portifolio</a>
+
+      <div class="toggle_btn">
+        <i class="fa-solid fa-regular fa-bars"></i>
+      </div>
+    </div>
+
+    <div class="dropdown_menu">
+      <li> <a href="hero">Home</a></li>
+      <li> <a href="about">Sobre</a></li>
+      <li> <a href="services">Serviços</a></li>
+      <li> <a href="contato.html">Contato</a></li>
+      <li><a href="https://github.com/NicolyC?tab=repositories" class="action_btn">Portifolio</a></li>
+    </div>
+  </header>
+
+  <div class="container">
+    <video autoplay loop muted plays-inline src="img/fundo.mp4" class="back" type="video/mp4"></video>
   </div>
 
-  <div class="card">
-    <h1>Seja responsável e faça boas alterações por aqui!!</h1>
-    <p>Não aceitamos brincadeiras... ou aceitamos, te resta testar.</p>
-  </div>
+  <main>
+    <section id="hero">
+      <h1>Bem vindo</h1>
+      <p>Aqui você encontrará informações minha empresa e meu portfolio. <br> Explore e aproveite sua visita!.</p>
+    </section>
+  </main>
+
+  <script>
+    const toggleBtn = document.querySelector('.toggle_btn')
+    const toggleBtnIcon = document.querySelector('.toggle_btn i')
+    const dropDownMenu = document.querySelector('.dropdown_menu')
+
+    toggleBtn.onclick = function () {
+      dropDownMenu.classList.toggle('open')
+      const isOpen = dropDownMenu.classList.contains('open')
+
+      toggleBtnIcon.classList = isOpen
+        ? 'fa-solid fa-regular fa-xmark'
+        : 'fa-solid fa-regular fa-bars'
+    }
+  </script>
 </body>
+
 </html>
