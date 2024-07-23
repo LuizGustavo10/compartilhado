@@ -129,6 +129,17 @@ text-align: center;
 color: var(--cor-branco);
 }
 
+section#hero2{
+  display: none;
+  height: calc(100vh - 60px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: var(--cor-branco);
+  font-size: 25px;
+}
+
 #hero h1{
   font-size: 3rem;
   margin-bottom: 1rem;
@@ -151,6 +162,14 @@ color: var(--cor-branco);
   }
 
   .dropdown_menu{
+    display: block;
+  }
+
+  section#hero{
+    display: none;
+  }
+
+  section#hero2{
     display: block;
   }
 }
