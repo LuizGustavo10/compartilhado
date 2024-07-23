@@ -1,0 +1,2 @@
+# compartilhado
+Repositório em conjunto
