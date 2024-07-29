@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.painel {
+    align-items: center;
+    text-align: center;
+    padding-top: 25px;
+    width: 50%;
+    height: 15rem;
+    font-size: 18px;
+    background-color: seagreen;
+    border-radius: 15px;
+}
