@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    background-color: rgb(44, 81, 161);
+}
+
+.painel {
+    margin: auto;
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 25px;
+    width: 50vh;
+    height: 80vh;
+    font-size: 18px;
+    background-color: #fff;
+    border-radius: 15px;
+}
+
+.painel-content {
+
+}
+
+.painel h1 {
+    color: #07a5d4;
+}
+
+.painel-action {
+    border: 20px;
+    padding: 15px;
+    margin-bottom: 25px;
+}
+
+.painel .painel-content .painel-input {
+    border-radius: 18px;
+    border: 2px solid #07a5d4;
+    padding: 8px;
+}
+
+.painel .painel-content .painel-btn {
+    border-radius: 18px;
+    padding: 10px;
+    background-color: #c03d34;
+    border: 2px solid #fff;
+    color: #fff;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.painel .painel-content .painel-btn:hover {
+    background-color: #b41d1d;
+}
+
+.painel .painel-content p strong {
+    color: #1b93b8;
+}
+
+.painel .painel-imagem {
+    margin-top: 25px;
+}
+
+.painel .painel-content .painel-ancora {
+    text-decoration: none;
+    font-size: 16px;
+    background-color: #07a5d4;
+    color: #fff;
+    padding: 10px;
+    border-radius: 18px;
+    transition: .5s;
+}
+
+.painel .painel-content .painel-ancora:hover {
+    background-color: #3568d6;
+}

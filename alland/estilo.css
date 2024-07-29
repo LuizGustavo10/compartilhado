@@ -1,0 +1,23 @@
+.painel{
+    margin: 100px;
+            text-align: center;
+            box-shadow: 2px 2px 2px 2px;
+            border-radius: 10px;
+            font-family: monospace;
+            font-size: 20px;
+            background-color:blueviolet;
+   margin-left: 90px;
+   margin-right: 90px;
+        
+}
+button{
+    background-color: rgb(128, 0, 255);
+    border-radius: 6px;
+}
+button:hover{
+    background-color: rgb(187, 230, 0);
+    transition: 0.5s;
+}
+body{
+background-color: black
+};

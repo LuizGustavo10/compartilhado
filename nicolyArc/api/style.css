@@ -1,0 +1,75 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #313a18aa;
+}
+
+.painel{
+  max-width: 350px;
+  max-height: 350px;
+  margin: auto;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 2px 2px 20px #000;
+  border-radius: 20px;
+  margin-top: 20px;
+  padding: 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-transform: uppercase;
+}
+
+.painel h1{
+  margin-top: 20px;
+}
+
+.painel input{
+  margin: 25px 25px 25px -2px;
+  padding: 5px 10px;
+  border: 2px solid #414d21ee;
+  border-radius: 10px;
+  width: 50%;
+}
+.painel button{
+  background-color: #313a18;
+  color: white;
+  text-transform: uppercase;
+  font-size: 12px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 15px;
+  transition: .5s ease-in-out;
+}
+
+.painel #resultado{
+  margin-left: 80px;
+  width: 80%;
+  text-align: left;
+  line-height: 2;
+  margin-bottom: 20px;
+}
+
+/* #painel{
+  height: 20vh;
+} */
+
+.painel #mapa{
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+  background-color: #313a18;
+  padding: 10px 15px;
+  border-radius: 15px;
+  transition: .5s ease-in-out;
+}
+
+.painel button:hover,
+#mapa:hover {
+  background-color: #245c42b6;
+}
+.painel #mapa span{
+margin-left: 5px;
+}
