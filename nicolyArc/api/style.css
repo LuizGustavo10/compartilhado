@@ -10,7 +10,7 @@ body{
 
 .painel{
   max-width: 350px;
-  height: 350px;
+  max-height: 350px;
   margin: auto;
   text-align: center;
   background-color: #fff;
@@ -51,6 +51,10 @@ body{
   line-height: 2;
   margin-bottom: 20px;
 }
+
+/* #painel{
+  height: 20vh;
+} */
 
 .painel #mapa{
   text-decoration: none;

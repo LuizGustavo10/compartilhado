@@ -18,5 +18,7 @@ function buscar(){
     document.getElementById('painel').innerHTML =
      `<a id="mapa" href="https://www.google.com/maps/place/${dados.cep}" target="_blank">Ver localização no mapa <span></span></span><i class="fa-solid fa-map"></i></a>`
 
+     document.getElementById('painel').style.height = '20vh'
+
    }).catch(error => alert('Deu errado' + error))
 }
