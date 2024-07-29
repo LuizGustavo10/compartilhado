@@ -10,7 +10,7 @@ body{
 
 .painel{
   max-width: 350px;
-  height: 300px;
+  height: 350px;
   margin: auto;
   text-align: center;
   background-color: #fff;
@@ -40,12 +40,32 @@ body{
   font-size: 12px;
   padding: 10px 15px;
   border: none;
-  border-radius: 10px;
+  border-radius: 15px;
+  transition: .5s ease-in-out;
 }
 
 .painel #resultado{
-  margin-left: 90px;
+  margin-left: 80px;
   width: 80%;
   text-align: left;
   line-height: 2;
+  margin-bottom: 20px;
+}
+
+.painel #mapa{
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+  background-color: #313a18;
+  padding: 10px 15px;
+  border-radius: 15px;
+  transition: .5s ease-in-out;
+}
+
+.painel button:hover,
+#mapa:hover {
+  background-color: #245c42b6;
+}
+.painel #mapa span{
+margin-left: 5px;
 }

@@ -14,5 +14,9 @@ function buscar(){
     <strong>DDD: </strong> ${dados.ddd} <br>
     <strong>CEP: </strong> ${dados.cep} <br> 
     <strong>UF: </strong> ${dados.uf} <br>`;
+
+    document.getElementById('painel').innerHTML =
+     `<a id="mapa" href="https://www.google.com/maps/place/${dados.cep}" target="_blank">Ver localização no mapa <span></span></span><i class="fa-solid fa-map"></i></a>`
+
    }).catch(error => alert('Deu errado' + error))
 }
