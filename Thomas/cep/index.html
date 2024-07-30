@@ -1,18 +1,20 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./estilo.css">
     <title>Document</title>
 </head>
 <body>
-    <div>
+    <div class="consulta">
         <h1> Consulta de CEP</h1>
         <input type="text" id="cep" placeholder="Digite o CEP">
-        <button onclick="buscar()"> Buscar</button>
+        <button onclick="buscar()" class="botao1"> Buscar </button>
 
         <p id="resultado"></p>
+        <button onclick="window.open(mapa, '_blank')"> mapa </button>
     </div>
-    <script src="script.js" ></script>
+    <script src="./script.js" ></script>
 </body>
 </html>
