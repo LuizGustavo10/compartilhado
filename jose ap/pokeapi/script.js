@@ -14,8 +14,16 @@ if(entrada.length < 1 ){
     fetch(url)
         .then(response => response.json())
         .then(dados => {
+//variável que pega todas as estatisticas
+            let estatisticas = dados.stats;
+
+//obtém individualmente dentro de estatisticas o hp, ataque e defesa
+            let hp = estatisticas.find(stat => stat.stat.name === "hp").base_stat;
+            let ataque = estatisticas.find(stat => stat.stat.name === "attack").base_stat;
+            let defesa = estatisticas.find(stat => stat.stat.name === "defense").base_stat;
+
 //pega o elemento tela no html 
- let tela = document.getElementById("tela");
+ var tela = document.getElementById("tela");
  //faz parecer no elemento tela
  tela.innerHTML =
 
@@ -27,11 +35,18 @@ if(entrada.length < 1 ){
 <p> tipo: ${dados.types.map(type => type.type.name)} </p>
 <p> Habilidades: ${dados.abilities.map(ability => ability.ability.name)} <p>
 
+<p>vida: ${hp} </p>
+<p> ataque: ${ataque} </p>
+<p> defesa: ${defesa} </p>
 
 ` ;
 contador = dados.id;
 //limpar campo de entrada
 document.getElementById("entrada").value="";
+
+        }).catch(error => {
+            alert('algo deu errado' + error);
+
         });
     }
 
