@@ -1,0 +1,37 @@
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: cornflowerblue;
+}
+
+.painel{
+    background-color: rgb(255, 255, 255);
+    width: 400px; /*largura*/
+    height: 450px; /*altura*/
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 1px 1px 6px black;
+    
+
+}
+button {
+    background-color: cornflowerblue;
+    border: none;
+    color: white;
+    height: 22px;
+    border-radius: 4px;
+    box-shadow: 1px 1px 2px black;
+}
+button:hover{
+    background-color: black;
+    transition: 1s;
+    cursor: pointer;
+}
+#cep{
+    font-size: 15px;
+}
+#resultado{
+    text-align: left;
+    margin-left: 70px;
+}
