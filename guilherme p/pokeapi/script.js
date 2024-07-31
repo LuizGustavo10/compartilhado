@@ -1,5 +1,20 @@
+let contador = 0;
+
+
+
+
+
+
+
+
 function buscar(){
     let entrada = document.getElementById('entrada').value.toLowerCase();
+
+    // se tamanho da entrada for menor que 1 caracter
+if(entrada.length < 1 ){
+    entrada = contador;
+}
+
 let url = `https://pokeapi.co/api/v2/pokemon/${entrada}`;
 
 
@@ -22,7 +37,21 @@ fetch(url)
 
     `;
 
+     contador = dados.id;
+     document.getElementById('entrada').value="";
+
 });
 
 
 }
+
+function avancar(){
+    contador = contador + 1;
+    buscar();
+}
+
+function voltar(){
+    contador -= 1;  
+    buscar();
+}
+
