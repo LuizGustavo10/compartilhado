@@ -1,13 +1,5 @@
-
-let contador = 0;
-
- function buscar() {
-
+function buscar() {
     let entrada = document.getElementById("entrada").value.toLowerCase();
-    //se o tamanho da entrada for menor que 1 caracter
-if(entrada.length < 1 ){
-    entrada = contador;
-}
     let url = `https://pokeapi.co/api/v2/pokemon/${entrada}`;
 
     //buscar url - response e a resposta ,  espera e retorna  de um arquivo json
@@ -26,22 +18,8 @@ if(entrada.length < 1 ){
 <p> id: ${dados.id} </p>
 <p> tipo: ${dados.types.map(type => type.type.name)} </p>
 <p> Habilidades: ${dados.abilities.map(ability => ability.ability.name)} <p>
-
+<p> status: ${dados.stats.map(stat => stat.stat.name+stat.base_stat)} <p>
 
 ` ;
-contador = dados.id;
-//limpar campo de entrada
-document.getElementById("entrada").value="";
         });
     }
-
-    function avancar(){
-contador = contador +1;
-buscar();
-
-    }
-
-    function voltar(){
-    contador-=1;
-    buscar();
-}
