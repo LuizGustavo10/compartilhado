@@ -1,0 +1,46 @@
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(125, 231, 185);
+    
+    }
+    .painel{
+    background-color: rgb(230, 229, 229);
+    width: 400px;/*largura*/
+    height: 450px;/*altura*/
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 2px 2px 7px black;
+    margin-top: 15%;
+    
+    }
+    button{
+    background-color: blueviolet;
+    border: none;
+    color: white;
+    height: 22px;
+    border-radius: 6px;
+    box-shadow: 1px 1px 2px;
+    
+    }
+    
+    button:hover{
+    background-color: rgb(49, 47, 44);
+    transition: 1s;
+    cursor: pointer;
+    
+    
+    }
+    #cep{
+    height: 20px;
+    border-radius: 6px;
+    
+    
+    }
+    #resultyado{
+        text-align: left;
+    margin-left: 70px;
+    
+        
+    }
