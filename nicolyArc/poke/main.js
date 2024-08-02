@@ -23,8 +23,14 @@ function buscar(){
     var tela = document.getElementById("tela");
   
     tela.innerHTML = 
-    `<img src="${dados.sprites.front_default}">
-    <img src="${dados.sprites.back_default}">
+    `
+    <div class="numero"> ${dados.id}</div>
+    
+    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/${dados.id}.gif">
+    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/back/${dados.id}.gif"> 
+    
+    
+    <div class"informacoes">
     <h2>Nome: ${dados.name}</h2>
     <p> id: ${dados.id}</p>
     <p> Tipo: ${dados.types.map(type => type.type.name)}</p>
@@ -33,9 +39,12 @@ function buscar(){
     <p> Ataque: ${attack}</p>
     <p> Defesa: ${defense}</p>
     <p> Velocidade: ${speed}</p>
+    <p> Peso: ${dados.weight}</p>
+    <p> Altura: ${dados.height}</p>
     <br>
     <button class="btn" onclick="voltar()">Anterior</button>
     <button class="btn" onclick="avancar()">Próximo</button>
+    </div>
     `;
     contador = dados.id;
     entrada = document.getElementById("entrada").value="";

@@ -1,0 +1,69 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #974545;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  position: relative;
+}
+
+.painel{
+  max-width: 360px;
+  max-height: 550px;
+  margin: auto;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 2px 2px 20px #000;
+  border-radius: 20px;
+  margin-top: 20px;
+  padding: 10px;
+  text-transform: uppercase;
+}
+
+.painel h1{
+  margin-top: 20px;
+}
+
+.painel input{
+  margin: 25px 25px 25px -2px;
+  padding: 5px 10px;
+  border: 2px solid #974545;
+  border-radius: 10px;
+  width: 50%;
+}
+.painel button{
+  background-color: #974545;
+  color: white;
+  text-transform: uppercase;
+  font-size: 12px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 15px;
+  transition: .5s ease-in-out;
+}
+
+.painel #tela{
+  text-align: center;
+  line-height: 2;
+  margin-bottom: 20px;
+}
+
+img{
+  width: 100px;
+  height: 100px;
+  filter: drop-shadow(5px 10px 8px black);
+}
+
+.numero{
+  position: absolute;
+  font-size: 200px;
+  font-weight: 900;
+  color: rgba(0, 0, 0, 0.24);
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
