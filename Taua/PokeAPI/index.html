@@ -4,19 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Pokemon API</title>
 </head>
 <body>
     <div class="painel">
-        <h1>Pokédex</h1>
-
-        <div id="tela"></div>
+        <button class="botao" onclick="voltar()"> <i class="fa-solid fa-arrow-left"></i> </button>
 
         <input type="text" id="entrada" placeholder="Digite um pokémon...">
-        <button class="botao" onclick="buscar()"> Pesquisar </button>
+        <button class="botao" onclick="buscar()"> <i class="fa-solid fa-magnifying-glass"></i> </button>
+
+        
+        <button class="botao" onclick="avancar()"> <i class="fa-solid fa-arrow-right"></i> </button>
+
+        <div id="tela"></div>
         <br>
-        <button class="botao" onclick="voltar()"> Anterior </button>
-        <button class="botao" onclick="avancar()"> Próximo </button>
     </div>
     <script src="./script.js"></script>
 </body>
