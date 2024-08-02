@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(111deg, rgba(226,28,52,1) 0%, rgba(119,29,50,1) 100%);
+    background-attachment: fixed;   /* fixar background*/
+    text-align: center; /*centralizar*/
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+    padding-top: 10px;
+    position: relative;
+}
+
+#tela {
+    max-width: 600px;
+    height: 500px;
+    margin: auto;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+    filter: drop-shadow(5px 10px 8px black);
+}
+
+.numero {
+    position: absolute;
+    font-size: 100px;
+    font-weight: 900;
+    color: rgba(255, 255, 255, 0.18);
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    user-select: none;
+}
+
+.informacoes {
+    background-color: white;
+    border-radius: 30px;
+    margin-top: -18px;
+    padding: 20px;
+}
