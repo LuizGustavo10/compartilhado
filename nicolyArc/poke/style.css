@@ -11,12 +11,12 @@ body{
 }
 
 .painel{
-  max-width: 360px;
-  max-height: 550px;
+  max-width: 500px;
+  max-height: 1000px;
   margin: auto;
   text-align: center;
   background-color: #fff;
-  box-shadow: 2px 2px 20px #000;
+  /* box-shadow: 2px 2px 20px #000; */
   border-radius: 20px;
   margin-top: 20px;
   padding: 10px;
@@ -28,10 +28,10 @@ body{
 }
 
 .painel input{
-  margin: 25px 25px 25px -2px;
-  padding: 5px 10px;
+  margin: 25px 25px 15px -2px;
+  padding: 10px 20px;
   border: 2px solid #974545;
-  border-radius: 10px;
+  border-radius: 15px;
   width: 50%;
 }
 .painel button{
@@ -49,6 +49,8 @@ body{
   text-align: center;
   line-height: 2;
   margin-bottom: 20px;
+  margin-top: 20px;
+
 }
 
 img{
@@ -60,10 +62,29 @@ img{
 .numero{
   position: absolute;
   font-size: 200px;
+  height: 300px;
   font-weight: 900;
-  color: rgba(0, 0, 0, 0.24);
-  top: 35%;
+  color: rgba(167, 167, 167, 0.18);
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 0;
+  user-select: none;
+}
+
+.informacoes{
+  border-radius: 50px;
+  margin-top: -15px;
+  padding-top: 20px;
+  box-shadow: rgba(0, 0, 0, 0.562) 0px -10px 15px;
+  margin-bottom: 20px;
+  border: 1px solid #00000018;
+}
+
+.btn{
+  margin: 15px 0 20px;
+  cursor: pointer;
+}
+.btn.dois{
+  margin-right: 20px;
 }
