@@ -35,7 +35,7 @@ var tela = document.getElementById("tela");
 
 <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/${dados.id}.gif">
 <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/back/${dados.id}.gif">
-<div class="numero"> ${dados.id}</div)
+<div class="numero"> ${dados.id}</div>
 
 <div class="informacoes">
 <h2>nome: ${dados.name}</h2>
