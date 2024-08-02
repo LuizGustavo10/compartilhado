@@ -1,0 +1,23 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    background: linear-gradient(to top, rgb(0, 134, 116), rgb(130, 116, 255));
+    background-attachment: fixed; /*fixar background*/
+    text-align: center;          /*centralizar*/
+    font-family: "Segoe UI" !important;
+    padding-top: 10px;
+}
+#tela{
+    max-width: 600px;
+    margin: auto;
+    background: linear-gradient(to top, rgb(1, 150, 120), rgb(110, 120, 140));;
+    border-radius: 10px;
+}
+.botao{
+    border-radius: 10px;
+    font-size: 20px;
+}
+.entrada{
+    font-size: 20px;
+    border-radius: 10px
+}

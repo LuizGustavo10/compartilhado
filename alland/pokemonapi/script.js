@@ -17,17 +17,27 @@ function buscar() {
 //  variavel que pega todas as estatisticas
             let estatisticas = dados.stats;
             //obtem individualmente dentro de estatisticas o hp,ataque  e defesa
-            let hp = estatisticas.find(stat => stat.stat.name === "hp").base_stat;
-            let ataque = estatisticas.find(stat => stat.stat.name === "attack").base_stat;
-            let defesa = estatisticas.find(stat => stat.stat.name === "defense").base_stat;
+            let hp = estatisticas.find(item => item.stat.name === "hp").base_stat;
+            let ataque = estatisticas.find(item => item.stat.name === "attack").base_stat;
+            let defesa = estatisticas.find(
+                function(item){
+                return item.stat.name === "defense";
+        }
+    ).base_stat;
+
+    console.log(dados)
             
 //pega o elemento tela no html 
 var tela = document.getElementById("tela"); 
  //faz parecer no elemento tela
  tela.innerHTML =
 `
-<img src="${dados.sprites.front_default}">
-<img src="${dados.sprites.back_default}">
+
+<img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/${dados.id}.gif">
+<img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/back/${dados.id}.gif">
+<div class="numero"> ${dados.id}</div)
+
+<div class="informacoes">
 <h2>nome: ${dados.name}</h2>
 <p> id: ${dados.id} </p>
 <p> tipo: ${dados.types.map(type => type.type.name)} </p>
@@ -35,7 +45,12 @@ var tela = document.getElementById("tela");
 <p> vida: ${hp} <p>
 <p> ataque: ${ataque} <p>
 <p> defesa: ${defesa} <p>
+<p> altura: ${defesa} <p>
+<p> peso: ${defesa} <p>
 
+
+
+</div>
 
 ` ;
 contador = dados.id;
