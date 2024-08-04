@@ -12,33 +12,31 @@ function buscar(){
     //buscar url - response é a resposta, que espera o retorno de um arquivo json
     fetch(url)
     .then(response =>response.json())
-    .then(dados => {
-
+    .then(pokemon_dadosAbilities => {
+ console.log(pokemon_dadosAbilities)
         //variável que pega todas as estatisticas
-        let estatisticas = dados.stats;
+        let estatisticas = pokemon_dadosAbilities.stats;
         //obtém individualmente dentro de estatisticas o HP, ataque e defesa
-        let hp = estatisticas.find(stat => stat.stat.name === "hp").base_stat;
-        let ataque = estatisticas.find(stat => stat.stat.name === "attack").base_stat;
-        let defesa = estatisticas.find(stat => stat.stat.name === "defense").base_stat;
-
-        
+        let hp = estatisticas.find(item => item.stat.name === "hp").base_stat;
+        let ataque = estatisticas.find(item => item.stat.name === "attack").base_stat;
+        let defesa = estatisticas.find(item => item.stat.name === "defense").base_stat;
 
         //pega o elemento tela no html
        var tela = document.getElementById("tela");
        //faz aparecer no elemento tela
        tela.innerHTML = 
-       `<img src="${dados.sprites.front_default}">
-        <img src="${dados.sprites.back_default}">
-        <h2> Nome: ${dados.name} </h2>
-        <p>  Id: ${dados.id} </p>
-        <p>  Tipo: ${dados.types.map(type => type.type.name)} </p>
-        <p>  Habilidades: ${dados.abilities.map(ability => ability.ability.name)} </p>
-        <p>  Habilidades: ${dados.abilities.map(ability => ability.ability.name)} </p>
+       `<img src="${pokemon_dadosAbilities.sprites.front_default}"> 
+        <img src="${pokemon_dadosAbilities.sprites.back_default}">
+        <h2> Nome: ${pokemon_dadosAbilities.name} </h2>
+        <p>  Id: ${pokemon_dadosAbilities.id} </p>
+        <p>  Tipo: ${pokemon_dadosAbilities.types.map(type => type.type.name)} </p>
+        <p>  Habilidades: ${pokemon_dadosAbilities.abilities.map(item => item.ability.name)} </p>
+        <p>  Habilidades: ${pokemon_dadosAbilities.abilities.map(item => item.ability.name)} </p>
         <p>  Vida: ${hp} </p>
         <p>  Ataque: ${ataque} </p>
         <p>  Defesa: ${defesa} </p>
        `;
-        contador = dados.id;
+        contador = pokemon_dadosAbilities.id;
         //limpar campo de entrada
         document.getElementById("entrada").value="";
     }).catch(error => {
