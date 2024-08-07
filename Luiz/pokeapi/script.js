@@ -40,14 +40,15 @@ function buscar() {
         <div class="numero"> ${dados.id} </div>
 
         <div class="informacoes">
-            <h2> Nome: ${dados.name} </h2>
-            <p>  Id: ${dados.id} </p>
-            <p>  Tipo: ${dados.types.map(type => type.type.name)} </p>
-            <p>  Habilidades: ${dados.abilities.map(ability => ability.ability.name)} </p>
-            <p>  Habilidades: ${dados.abilities.map(ability => ability.ability.name)} </p>
-            <p>  Vida: ${hp} </p>
-            <p>  Ataque: ${ataque} </p>
-            <p>  Defesa: ${defesa} </p>
+            <p>  <b> <i class="fa-solid fa-tag"></i>  Nome: </b> ${dados.name} <p>
+            <p>  <b> <i class="fa-solid fa-sun"></i> Tipo: </b>${dados.types.map(type => type.type.name)} </p>
+            <p>  <b> <i class="fa-solid fa-star"></i> Habilidades: </b> ${dados.abilities.map(ability => ability.ability.name)} </p>
+            <p>  <b> <i class="fa-solid fa-weight-hanging"></i> Peso: </b> ${dados.weight / 10} Kg </p>
+            <p>  <b> <i class="fa-solid fa-up-down"></i>  Altura: </b> ${dados.height / 10} M</p>
+
+            <p>  <b>Vida: </b> ${hp} </p>
+            <p>  <b>Ataque: </b> ${ataque} </p>
+            <p>  <b>Defesa: </b> ${defesa} </p>
         </div>
 
        `;
