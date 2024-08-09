@@ -1,3 +1,80 @@
-#botao1, #botao2 {
-    
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to top, red, rgb(255, 115, 0));
+    background-attachment: fixed; /*fixar background*/
+    text-align: center;           /*centralizar*/
+    font-family: montserrat;
+    padding-top: 10px;
+    position: relative;
 }
+
+#tela{
+    max-width: 600px;
+    height: 500px;
+    margin: auto;
+   
+}
+
+img{
+    width: 100px;
+    height: 100px;
+    filter: drop-shadow(5px 10px 8px black);
+}
+
+.numero{
+    position: absolute;
+    font-size: 100px;
+    font-weight: 900;
+    color: rgba(255, 255, 255, 0.18);
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    user-select: none;
+}
+
+.informacoes{
+    background-color: white;
+    border-radius: 30px;
+    margin-top: -15px;
+    padding-top: 20px;
+  
+}
+
+button {
+    background: none;
+    border: none;
+    color:  white;
+}
+button:hover{
+    color: black;
+    transition: 1s;
+}
+#entrada{
+    text-align:center;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.18);
+    border-radius: 5px;
+    color: white;
+}
+/*alterar cor do placeholder do input*/
+::-webkit-input-placeholder{
+    color: white;
+}
+p {
+    text-align: left;
+    width: 300px;
+    margin: auto;
+}
+b {
+    color: rgb(255, 102, 0);
+}
+
+
+
+
+
+
