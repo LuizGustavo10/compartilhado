@@ -99,7 +99,7 @@ img{
   margin-right: 50px;
 }
 
-#hp, #ataque, #defesa {
+#hp, #ataque, #defesa, #velocidade {
   min-width: 250px;
   max-width: 400px;
   height: 20px;

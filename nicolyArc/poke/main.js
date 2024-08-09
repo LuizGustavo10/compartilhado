@@ -42,6 +42,7 @@ function buscar(){
     <p> <b>Defesa:</b> ${defense}</p>
     <div id="defesa"></div>
     <p> <b>Velocidade:</b> ${speed}</p>
+    <div id="velocidade"></div>
     <p> <b>Peso:</b> ${dados.weight}</p>
     <p> <b>Altura:</b> ${dados.height}</p>
     <button class="btn dois" onclick="voltar()"><i class="fa-solid fa-arrow-left"></i></button>
@@ -77,9 +78,19 @@ function buscar(){
       duration: 900, // duração da animação
     });
 
+    let velCircle = new ProgressBar.SemiCircle('#velocidade' ,{ 
+      strokeWidth: 2, //Espessura da linha de progresso
+      color: '#f1ca5f', // cor da linha de progresso
+      trailColor: '#e2e2e2', // cor da trilha
+      trailWidth: '1', //espessura da trilha
+      duration: 900, // duração da animação
+      svgStyle: null,
+    });
+
     hpBarra.animate(hp/maxStat)
     ataBarra.animate(attack/maxStat)
     defBarra.animate(defense/maxStat)
+    velCircle.animate(speed/maxStat)
 
   }).catch(error => {
     tela.innerHTML = 
