@@ -1,10 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 body{
     margin: 0%;
     padding: 0%;
-    background: linear-gradient(to top, rgb(0, 134, 116), rgb(130, 116, 255));
+    background: linear-gradient(to top, rgb(150, 10, 10), rgb(221, 16, 2));
     background-attachment: fixed; /*fixar background*/
     text-align: center;          /*centralizar*/
-    font-family: "Segoe UI" !important;
+    font-family: montserrat;
     padding-top: 10px;
     position: relative;
 
@@ -17,14 +18,14 @@ body{
 img{
     width: 100px;
     height: 100px;
-   filter: drop-shadow(5px 10px 8px black);
+   filter: drop-shadow(5px 10px 8px rgb(59, 59, 59));
 }
 
 .numero{
     position: absolute;
     font-size: 100px;
     font-weight: 900;
-    color: rgba(255,255,255,0.18);
+    color: rgba(223, 127, 127, 0.733);
     top: 20%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -33,17 +34,52 @@ img{
 
 
 .informacoes{
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.842);
     border-radius: 20px;
     margin-top: -15px;
     padding-top: 20px;
 }
 
-.botao{
-    border-radius: 10px;
+button{
+   color: rgba(255, 255, 255, 0.63);
     font-size: 20px;
+    background:none;
+    border: none;
+
 }
+button:hover{
+    color: rgb(134, 58, 13);
+    transition: 0.5s;
+
+}
+
 .entrada{
     font-size: 20px;
-    border-radius: 10px
+    border-radius: 10px;
+    text-align: center;
+    background-color:#e0d7d76c;
+    border: none;
+ 
+}
+/* alterar cor do placeholder do input */
+::-webkit-input-placeholder{
+    color: rgba(255, 255, 255, 0.712);
+
+}
+p{
+    text-align: left;
+    width: 300px;
+    margin: auto;
+    
+}
+b{
+    color: rgba(0, 0, 0, 0.979);
+}
+
+#hp,#defesa,#ataque{
+    width: 300px;
+    height: 20px;
+    margin: auto;
+  
+
 }

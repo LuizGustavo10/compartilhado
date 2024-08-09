@@ -38,17 +38,19 @@ var tela = document.getElementById("tela");
 <div class="numero"> ${dados.id}</div>
 
 <div class="informacoes">
-<h2>nome: ${dados.name}</h2>
-<p> id: ${dados.id} </p>
-<p> tipo: ${dados.types.map(type => type.type.name)} </p>
-<p> Habilidades: ${dados.abilities.map(ability => ability.ability.name)} <p>
-<p> vida: ${hp} <p>
-<p> ataque: ${ataque} <p>
-<p> defesa: ${defesa} <p>
-<p> altura: ${defesa} <p>
-<p> peso: ${defesa} <p>
+<h2><b>nome:</b> ${dados.name}</h2>
+<p> <b>tipo:</b> ${dados.types.map(type => type.type.name)} </p>
+<p> <b>Habilidades:</b> ${dados.abilities.map(ability => ability.ability.name)} <p>
 
+<p> <b>altura:</b>${dados.weight / 10} m<p>
+<p> <b>peso:</b> ${dados.height / 10} kg <p>
 
+<p> <b>vida:</b> ${hp} <p>
+<div id="hp"></div>
+<p> <b>ataque:</b> ${ataque} <p>
+<div id="ataque"></div>
+<p> <b>defesa:</b> ${defesa} <p>
+<div id="defesa"></div>
 
 </div>
 
@@ -56,6 +58,34 @@ var tela = document.getElementById("tela");
 contador = dados.id;
 //limpar campo de entrada
 document.getElementById("entrada").value="";
+
+let maximo = 255;
+
+let hpBarra = new ProgressBar.Line('#hp',{
+    strokeWidth: 1, //espessura da linha de progresso
+color: '#871248', //cor
+trailColor: '#e0e0e0', //cor da trilha
+trailWidth: '1',   //espessura das trilhas
+duration: 1400   //duração da imaginação 
+});
+let ataqueBarra = new ProgressBar.Line('#ataque',{
+    strokeWidth: 1, //espessura da linha de progresso
+color: '#871248', //cor
+trailColor: '#e0e0e0', //cor da trilha
+trailWidth: '1',   //espessura das trilhas
+duration: 1400   //duração da imaginação 
+});
+let defesaBarra = new ProgressBar.Line('#defesa',{
+    strokeWidth: 1, //espessura da linha de progresso
+color: '#871248', //cor
+trailColor: '#e0e0e0', //cor da trilha
+trailWidth: '1',   //espessura das trilhas
+duration: 1400   //duração da imaginação 
+});
+hpBarra.animate(hp/maximo);
+ataqueBarra.animate(ataque/maximo);
+defesaBarra.animate(defesa/maximo)
+
         }).catch(error => {
             alert('algo deu errado' + error); 
 
