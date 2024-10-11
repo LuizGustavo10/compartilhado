@@ -35,16 +35,15 @@ function buscar() {
         <div class="numero"> ${data.id} </div>
 
         <div class="informacoes">
-            <h2> Nome: ${data.name} </h2>
-            <p>  Id: ${data.id} </p>
-            <p>  Tipo: ${data.types.map(type => type.type.name)}</p>
-            <p>  Habilidade: ${data.abilities.map(ability => ability.ability.name)} </p>
-            <p>  Vida: ${hp} </p>
-            <p>  Ataque: ${ataque} </p>
-            <p>  Defesa: ${defesa} </p>
-            <p>  Peso: ${data.weight}</p>
-            <p>  Altura: ${data.height}</p>
+            <p>  <b> <i class="fa-solid fa-tag"></i> Nome: </b> ${data.name} </p>
+            <p>  <b> <i class="fa-solid fa-sun"></i> Tipo: </b> ${data.types.map(type => type.type.name)}</p>
+            <p>  <b> <i class="fa-solid fa-star"></i> Habilidade: </b> ${data.abilities.map(ability => ability.ability.name)} </p>
+            <p>  <b> <i class="fa-solid fa-weight-hanging"></i> Peso: </b> ${data.weight/ 10}</p>
+            <p>  <b> <i class="fa-solid fa-up-down"></i> Altura: </b> ${data.height / 10}</p>
 
+            <p>  <b> <i class="fa-solid fa-heart"></i> Vida: </b> ${hp} </p>
+            <p>  <b> <i class="fa-solid fa-hand-fist"></i> Ataque: </b> ${ataque} </p>
+            <p>  <b> <i class="fa-solid fa-shield"></i> Defesa: </b> ${defesa} </p>
         </div>
         `;
         contador = data.id;

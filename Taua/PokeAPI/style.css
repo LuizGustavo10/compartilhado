@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Silkscreen:wght@400;700&display=swap');
+
 body {
     margin: 0;
     padding: 0;
     background: linear-gradient(111deg, rgba(226,28,52,1) 0%, rgba(119,29,50,1) 100%);
     background-attachment: fixed;   /* fixar background*/
     text-align: center; /*centralizar*/
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+    font-family: "Montserrat", sans-serif !important;
     padding-top: 10px;
     position: relative;
 }
@@ -12,6 +14,7 @@ body {
 #tela {
     max-width: 600px;
     height: 500px;
+    padding-top: 50px;
     margin: auto;
 }
 
@@ -37,5 +40,34 @@ img {
     background-color: white;
     border-radius: 30px;
     margin-top: -18px;
-    padding: 20px;
+    padding: 20px 25px 25px 35px;
+}
+
+button {
+    background: none;
+    border: none;
+    color: #fff;
+    transition: .5s ease-in;
+}
+
+button:hover {
+    color: #000;
+}
+
+#entrada {
+    text-align: center;
+    border: none;
+    background-color: #ffffffb2;
+    border-radius: 5px;
+}
+
+/* alterar cor do placeholder do input */
+::-webkit-input-placeholder {
+    color: #fff;
+}
+
+p {
+    text-align: left;
+    width: 300px;
+    margin: auto;
 }
